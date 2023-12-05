@@ -2,7 +2,7 @@ require_relative 'spec_helper'
 
 describe Author do
   let(:author) { Author.new('John', 'Doe') }
-  let(:item) { double('item') }
+  let(:item) { Item.new(Date.new(2010, 1, 1)) }
 
   describe '#initialize' do
     it 'sets a random id' do
