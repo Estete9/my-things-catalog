@@ -1,7 +1,5 @@
 require_relative 'spec_helper'
 
-require_relative 'spec_helper'
-
 describe Genre do
   before :each do
     @genre_name = 'Salsa'
