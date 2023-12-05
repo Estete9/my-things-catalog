@@ -1,4 +1,11 @@
 class Main
+
+  def initialize()
+    @books = []
+    @games = []
+    @music_albums = []
+  end
+
   OPTIONS =
     { 1 => :list_all_books,
       2 => :list_all_music_albums,
