@@ -4,6 +4,7 @@ require_relative 'genre'
 require_relative 'label'
 
 module CreateInstancesModule
+
   private
 
   # takes an item
