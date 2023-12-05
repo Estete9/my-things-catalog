@@ -5,7 +5,8 @@ require_relative 'label'
 
 module CreateInstancesModule
   # Add your create objects logic here
- private
+
+  private
 
   # takes an item
   # asks for user input to create genre, author, and label objects
