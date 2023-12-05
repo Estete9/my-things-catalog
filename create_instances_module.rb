@@ -1,4 +1,7 @@
 require 'date'
+require_relative 'author'
+require_relative 'genre'
+require_relative 'label'
 
 module CreateInstancesModule
   def add_book
@@ -19,6 +22,9 @@ module CreateInstancesModule
       p 'Add publish date (DD-MM-YYYY):'
     end
 
-    @books << Book.new(book_publisher, book_cover_state, book_publish_date)
+    new_book = Book.new(book_publisher, book_cover_state, book_publish_date)
+    complete_book = item_with_details(new_book)
+
+    @books << complete_book
   end
 end
