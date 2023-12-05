@@ -1,17 +1,8 @@
+require_relative 'book'
 require_relative 'create_instances_module'
-require_relative 'file_manager_module'
-require_relative 'display_module'
 
 class Main
   include CreateInstancesModule
-  include FileManagerModule
-  include DisplayModule
-
-  def initialize()
-    @books = []
-    @games = []
-    @music_albums = []
-  end
 
   OPTIONS =
     { 1 => :list_all_books,
