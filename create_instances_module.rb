@@ -46,6 +46,8 @@ module CreateInstancesModule
     genre = Genre.new(genre_name)
     label = Label.new(label_title, label_color)
 
+    @labels << label.title
+
     item.author = author
     item.genre = genre
     item.label = label
