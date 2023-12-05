@@ -8,6 +8,7 @@ class Main
     @books = []
     @games = []
     @music_albums = []
+    @labels = []
   end
 
   OPTIONS =
