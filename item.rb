@@ -23,6 +23,10 @@ class Item
     @author = author
   end
 
+  def add_genre(genre)
+    @genre = genre
+  end
+
   private
 
   def can_be_archived?
