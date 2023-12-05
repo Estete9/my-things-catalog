@@ -2,6 +2,7 @@ require 'date'
 require_relative 'book'
 
 class Item
+  # TODO: remove source attribute
   attr_accessor :genre, :author, :source, :label, :publish_date
 
   def initialize(publish_date)

@@ -6,8 +6,28 @@ describe Book do
     publisher = 'Penguin'
     cover_state = 'new'
     publish_date = Date.new(2005, 12, 12)
+    @genre = instance_double('Genre', name: 'Science Fiction')
+    @author = instance_double('Author', first_name: 'Douglas', last_name: 'Adams')
+    @label = instance_double('Label', title: 'Gift', color: 'Black')
 
-    @book = Book.new(publisher, cover_state, publish_date)
+    @book = Book.new(publisher, cover_state, publish_date, @genre, @author, @label)
+  end
+
+  context '#initialize' do
+    it "sets the genre, author, and label in the inherited properties" do
+      genre_name = 'Science Fiction'
+      author_f_name = 'Douglas'
+      author_l_name = 'Adams'
+      label_title = 'Gift'
+      lable_color = 'Black'
+
+      expect(@book.genre.name).to eql('Science Fiction')
+      expect(@book.author.first_name).to eql('Douglas')
+      expect(@book.author.last_name).to eql('Adams')
+      expect(@book.label.title).to eql('Gift')
+      expect(@book.label.color).to eql('Black')
+
+    end
   end
 
   context 'Inheritance from Item' do
