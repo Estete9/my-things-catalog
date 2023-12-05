@@ -19,3 +19,28 @@ CREATE TABLE authors(
     last_name VARCHAR(50),
     PRIMARY KEY(id)
 );
+
+CREATE TABLE item (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    genre VARCHAR(25),
+    author VARCHAR(50),
+    source VARCHAR(50),
+    label VARCHAR (50),
+    publish_date DATE,
+    archived BOOLEAN,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE music_album (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    on_spotify BOOLEAN, 
+    item_id INT,
+    PRIMARY KEY(id),
+    FOREIGN KEY (item_id) REFERENCES item(id)
+);
+
+CREATE TABLE genre (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(50),
+    PRIMARY KEY(id)
+);
