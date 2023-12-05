@@ -6,11 +6,11 @@ describe Book do
     publisher = 'Penguin'
     cover_state = 'new'
     publish_date = Date.new(2005, 12, 12)
-    @genre = instance_double('Genre', name: 'Science Fiction')
-    @author = instance_double('Author', first_name: 'Douglas', last_name: 'Adams')
-    @label = instance_double('Label', title: 'Gift', color: 'Black')
 
-    @book = Book.new(publisher, cover_state, publish_date, @genre, @author, @label)
+    @book = Book.new(publisher, cover_state, publish_date)
+    @book.genre = instance_double('Genre', name: 'Science Fiction')
+    @book.author = instance_double('Author', first_name: 'Douglas', last_name: 'Adams')
+    @book.label = instance_double('Label', title: 'Gift', color: 'Black')
   end
 
   context '#initialize' do
