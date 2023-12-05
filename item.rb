@@ -17,6 +17,9 @@ class Item
 
   def add_label(label)
     @label = label
+
+  def add_author(author)
+    @author = author
   end
 
   private
