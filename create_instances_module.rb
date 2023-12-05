@@ -4,8 +4,8 @@ require_relative 'genre'
 require_relative 'label'
 
 module CreateInstancesModule
-   private
-  
+  private
+
   # takes an item
   # asks for user input to create genre, author, and label objects
   # add these objects to the item
@@ -37,5 +37,4 @@ module CreateInstancesModule
       p 'Empty value, try again'
     end
   end
-
 end
