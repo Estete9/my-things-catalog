@@ -42,11 +42,20 @@ describe Label do
   context '#add_item' do
     it 'adds an Item object to the items array property' do
       publish_date = '2020-12-12'
-      item = instance_double(Item, publish_date: publish_date)
+      item = Item.new(publish_date)
 
       @label.add_item(item)
 
       expect(@label.items.length).to eql(1)
+    end
+
+    it 'updates the label of the item' do
+      label_title = 'Gift'
+      publish_date = '2020-12-12'
+      item = Item.new(publish_date)
+      @label.add_item(item)
+
+      expect(@label.items[0].label.title).to eql(label_title)
     end
   end
 end
