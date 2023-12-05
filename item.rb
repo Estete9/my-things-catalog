@@ -15,6 +15,10 @@ class Item
     @archived = true if can_be_archived?
   end
 
+  def add_label(label)
+    @label = label
+  end
+
   private
 
   def can_be_archived?
