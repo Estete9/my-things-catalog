@@ -1,6 +1,8 @@
-requiere 'date'
+require 'date'
+require_relative 'book'
 
 class Item
+  # TODO: remove source attribute
   attr_accessor :genre, :author, :source, :label, :publish_date
 
   def initialize(publish_date)
@@ -13,6 +15,10 @@ class Item
     @archived = true if can_be_archived?
   end
 
+  def add_label(label)
+    @label = label
+  end
+
   def add_author(author)
     @author = author
   end
@@ -21,7 +27,8 @@ class Item
 
   def can_be_archived?
     publish_year = @publish_date.year
-    total_years = Date.year - publish_year
+    current_year = Date.today.year
+    total_years = current_year - publish_year
     total_years > 10
   end
 end
