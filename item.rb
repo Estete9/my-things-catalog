@@ -1,4 +1,5 @@
-requiere 'date'
+require 'date'
+require_relative 'book'
 
 class Item
   attr_accessor :genre, :author, :source, :label, :publish_date
@@ -19,5 +20,6 @@ class Item
 
   def move_to_archive()
     @archived = true if can_be_archived?
+    false
   end
 end
