@@ -1,5 +1,4 @@
 require 'date'
-require 'pry'
 
 module CreateInstancesModule
   def add_book
@@ -21,8 +20,5 @@ module CreateInstancesModule
     end
 
     @books << Book.new(book_publisher, book_cover_state, book_publish_date)
-
-
-    binding.pry
   end
 end
