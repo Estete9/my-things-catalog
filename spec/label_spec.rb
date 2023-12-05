@@ -1,5 +1,7 @@
 require_relative 'spec_helper'
 
+require 'pry'
+
 describe Label do
   before :each do
     title = 'Gift'
