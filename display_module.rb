@@ -39,8 +39,9 @@ module DisplayModule
       details = <<~DETAILS
         Author: #{author_f_name} #{author_l_name}
         Genre: #{genre}
-        Label title: #{label_title}, Label color: #{label_color}
-        Publisher: #{game.publisher}
+        Label title: #{label_title}
+        Label color: #{label_color}
+        Publisher: #{game.publish_date}
         Id: #{game.id}
       DETAILS
       puts details

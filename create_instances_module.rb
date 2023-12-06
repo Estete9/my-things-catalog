@@ -32,11 +32,9 @@ module CreateInstancesModule
   end
 
   def add_game
-    p "What's the publish date? [year] "
-    p 'Answer: '
+    p "What's the publish date? [year]: "
     game_p_year = gets.chomp.to_i
-    p 'Is it a multiplayer game? [y/n]'
-    p 'Answer: '
+    p 'Is it a multiplayer game? [y/n]: '
     game_multiplayer = gets.chomp
     case game_multiplayer.downcase
     when 'y'
@@ -44,8 +42,7 @@ module CreateInstancesModule
     else
       false
     end
-    p 'When was the game last played?'
-    p 'Answer:'
+    p 'When was the game last played?: '
     game_l_year = gets.chomp.to_i
 
     base_game = Game.new(game_multiplayer, game_l_year, game_p_year)
