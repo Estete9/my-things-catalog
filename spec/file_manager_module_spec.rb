@@ -7,7 +7,7 @@ include FileManagerModule
 require 'pry'
 
 describe FileManagerModule do
-  let(:temp_dir) { 'temp_test_dir' }
+  let(:temp_dir) { File.join(File.dirname(__FILE__), 'temp_test_dir') }
   let(:book) { Book.new('penguin', 'bad', Date.parse('2006-12-12')) }
   let(:label) { Label.new('gift', 'red') }
   let(:genre) { Genre.new('Sci-Fi') }
@@ -46,7 +46,6 @@ describe FileManagerModule do
 
       file_content = JSON.parse(File.read(filename))
 
-      # binding.pry
       expect(file_content).to eq(expected_file_content)
     end
 
@@ -69,7 +68,6 @@ describe FileManagerModule do
       }
 
 
-      # allow(book).to receive(:to_h).and_return(expected_hash)
       expected_file_content = [book.to_h, second_book.to_h]
       save_to_json(book.to_h, filename)
       save_to_json(second_book.to_h, filename)

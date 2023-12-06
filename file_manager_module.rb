@@ -22,21 +22,3 @@ parsed_data = if File.exist?(filename)
     JSON.parse(file_content)
   end
 end
-
-
-# def save_to_json(item_hash, filename)
-#     # binding.pry
-
-
-
-#     parsed_data = if File.exist?(filename)
-#                     data_from_file = File.read(filename)
-#                     data_from_file.empty? ? [] : JSON.parse(data_from_file)
-#                   else
-#                     []
-#                   end
-
-#     parsed_data << item_hash
-
-#     File.write(filename, JSON.dump(parsed_data))
-#   end
