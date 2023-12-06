@@ -14,7 +14,7 @@ class Main
     @music_albums = []
     @labels = []
     @authors = []
-    @genres =[]
+    @genres = []
   end
 
   OPTIONS =

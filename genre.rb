@@ -12,4 +12,12 @@ class Genre
     @items << item
     item.add_genre(self)
   end
+
+  def to_h
+    {
+      'id' => @id,
+      'name' => @name,
+      'items' => @items.map(&:to_h)
+    }
+  end
 end
