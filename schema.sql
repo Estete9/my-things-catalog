@@ -28,7 +28,13 @@ CREATE TABLE music_album (
     publish_date  DATE,
     on_spotify BOOLEAN, 
     archived BOOLEAN,
-    PRIMARY KEY(id)
+    genre_id INT NOT NULL,
+    author_id INT NOT NULL,
+    label_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY (genre_id) REFERENCES genres(id),
+    FOREIGN KEY (author_id) REFERENCES authors(id),
+    FOREIGN KEY (label_id) REFERENCES labels(id)
 );
 
 CREATE TABLE genre (
