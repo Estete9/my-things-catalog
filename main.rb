@@ -1,8 +1,12 @@
 require_relative 'book'
 require_relative 'create_instances_module'
+require_relative 'file_manager_module'
+require_relative 'display_module'
 
 class Main
   include CreateInstancesModule
+  include FileManagerModule
+  include DisplayModule
 
   def initialize()
     @books = []
@@ -10,7 +14,6 @@ class Main
     @music_albums = []
     @labels = []
     @authors = []
-
     @genres =[]
   end
 
