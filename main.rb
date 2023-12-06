@@ -9,22 +9,21 @@ class Main
     @games = []
     @music_albums = []
     @labels = []
+    @authors = []
+    @genre =[]
   end
 
   OPTIONS =
     { 1 => :list_all_books,
       2 => :list_all_music_albums,
-      3 => :list_all_movies,
-      4 => :list_all_games,
-      5 => :list_all_genres,
-      6 => :list_all_labels,
-      7 => :list_all_authors,
-      8 => :list_all_sources,
-      9 => :add_book,
-      10 => :add_music_album,
-      11 => :add_movie,
-      12 => :add_game,
-      13 => :exit_app }.freeze
+      3 => :list_all_games,
+      4 => :list_all_genres,
+      5 => :list_all_labels,
+      6 => :list_all_authors,
+      7 => :add_book,
+      8 => :add_music_album,
+      9 => :add_game,
+      10 => :exit_app }.freeze
 
   def display_menu
     puts 'MENU: '
