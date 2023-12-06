@@ -2,6 +2,7 @@ require 'date'
 require_relative 'author'
 require_relative 'genre'
 require_relative 'label'
+require_relative 'game'
 
 module CreateInstancesModule
   # Add your create objects logic here
@@ -31,11 +32,11 @@ module CreateInstancesModule
   end
 
   def add_game
-    p "\nWhat's the publish date? [year] "
-    p "\nAnswer: "
+    p "What's the publish date? [year] "
+    p 'Answer: '
     game_p_year = gets.chomp.to_i
     p 'Is it a multiplayer game? [y/n]'
-    p "\nAnswer: "
+    p 'Answer: '
     game_multiplayer = gets.chomp
     case game_multiplayer.downcase
     when 'y'
@@ -44,9 +45,9 @@ module CreateInstancesModule
       false
     end
     p 'When was the game last played?'
-    p "\nAnswer: "
+    p 'Answer:'
     game_l_year = gets.chomp.to_i
- 
+
     base_game = Game.new(game_multiplayer, game_l_year, game_p_year)
     complete_game = item_with_details(base_game)
 
