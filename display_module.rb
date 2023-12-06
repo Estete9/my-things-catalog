@@ -25,10 +25,27 @@ module DisplayModule
   end
 
   def list_all_authors
-    @authors.each { |author| puts s_to_capital(author) }
+    puts 'List Authors'
+    puts '-----------------------'
+    @authors.each do |author|
+      puts "ID: #{author.id}"
+      puts "First Name: #{author.first_name}"
+      puts "Last Name: #{author.last_name}"
+
+      unless author.items.empty?
+        puts 'Items:'
+        author.items.each do |item|
+          puts "  - #{item.to_json}"
+        end
+      end
+
+      puts '-----------------------'
+    end
   end
 
   def list_all_games
+    puts 'List Games'
+    puts '-----------------------'
     @games.each do |game|
       author_f_name = s_to_capital(game.author.first_name)
       author_l_name = s_to_capital(game.author.last_name)
@@ -45,6 +62,7 @@ module DisplayModule
         Id: #{game.id}
       DETAILS
       puts details
+      puts '-----------------------'
     end
   end
 
