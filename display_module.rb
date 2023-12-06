@@ -1,15 +1,10 @@
 module DisplayModule
   # Add your display objects logic here
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 
   def list_all_labels
     @labels.each { |label| puts s_to_capital(label) }
   end
 
->>>>>>> 2ce3285 (Implement list_all_labels)
   def list_all_books
     @books.each do |book|
       author_f_name = s_to_capital(book.author.first_name)
@@ -34,5 +29,4 @@ module DisplayModule
   def s_to_capital(item)
     item[0].upcase + item[1..]
   end
->>>>>>> f846dad (Implement add_book method in create_instances_module)
 end

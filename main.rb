@@ -10,7 +10,8 @@ class Main
     @music_albums = []
     @labels = []
     @authors = []
-    @genre =[]
+
+    @genres =[]
   end
 
   OPTIONS =

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 require 'date'
 require_relative 'author'
 require_relative 'genre'
@@ -48,7 +46,10 @@ module CreateInstancesModule
     genre = Genre.new(genre_name)
     label = Label.new(label_title, label_color)
 
-    @labels << label.title
+ 
+    @genres << genre
+    @authors << author
+
 
     item.author = author
     item.genre = genre
@@ -68,4 +69,3 @@ module CreateInstancesModule
     end
   end
 end
->>>>>>> 2ce3285 (Implement list_all_labels)
