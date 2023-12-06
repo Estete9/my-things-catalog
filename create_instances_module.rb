@@ -30,6 +30,29 @@ module CreateInstancesModule
     @books << complete_book
   end
 
+  def add_game
+    p "\nWhat's the publish date? [year] "
+    p "\nAnswer: "
+    game_p_year = gets.chomp.to_i
+    p 'Is it a multiplayer game? [y/n]'
+    p "\nAnswer: "
+    game_multiplayer = gets.chomp
+    case game_multiplayer.downcase
+    when 'y'
+      true
+    else
+      false
+    end
+    p 'When was the game last played?'
+    p "\nAnswer: "
+    game_l_year = gets.chomp.to_i
+ 
+    base_game = Game.new(game_multiplayer, game_l_year, game_p_year)
+    complete_game = item_with_details(base_game)
+
+    @games << complete_game
+  end
+
   private
 
   # takes an item
