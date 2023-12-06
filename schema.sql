@@ -20,23 +20,15 @@ CREATE TABLE authors(
     PRIMARY KEY(id)
 );
 
-CREATE TABLE item (
+CREATE TABLE music_album (
     id INT GENERATED ALWAYS AS IDENTITY,
     genre VARCHAR(25),
     author VARCHAR(50),
-    source VARCHAR(50),
     label VARCHAR (50),
-    publish_date DATE,
-    archived BOOLEAN,
-    PRIMARY KEY (id)
-);
-
-CREATE TABLE music_album (
-    id INT GENERATED ALWAYS AS IDENTITY,
+    publish_date  DATE,
     on_spotify BOOLEAN, 
-    item_id INT,
-    PRIMARY KEY(id),
-    FOREIGN KEY (item_id) REFERENCES item(id)
+    archived BOOLEAN,
+    PRIMARY KEY(id)
 );
 
 CREATE TABLE genre (
