@@ -2,8 +2,7 @@ require 'date'
 require_relative 'book'
 
 class Item
-  # TODO: remove source attribute
-  attr_accessor :genre, :author, :source, :label, :publish_date
+  attr_accessor :genre, :author, :label, :publish_date, :id
 
   def initialize(publish_date)
     @id = Random.rand(1..10_000)

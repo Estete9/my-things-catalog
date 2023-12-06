@@ -4,6 +4,32 @@ require_relative 'genre'
 require_relative 'label'
 
 module CreateInstancesModule
+  # Add your create objects logic here
+
+  def add_book
+    p 'Add a publisher:'
+    book_publisher = gets.chomp
+
+    p 'Add cover state:'
+    book_cover_state = gets.chomp
+
+    p 'Add publish date (DD-MM-YYYY):'
+    book_publish_date = ''
+
+    loop do
+      book_publish_date = Date.parse(gets.chomp)
+      break
+    rescue ArgumentError
+      p 'Incorrect date format, please use DD-MM-YYYY format'
+      p 'Add publish date (DD-MM-YYYY):'
+    end
+
+    base_book = Book.new(book_publisher, book_cover_state, book_publish_date)
+    complete_book = item_with_details(base_book)
+
+    @books << complete_book
+  end
+
   private
 
   # takes an item
@@ -19,6 +45,8 @@ module CreateInstancesModule
     author = Author.new(f_name, l_name)
     genre = Genre.new(genre_name)
     label = Label.new(label_title, label_color)
+
+    @labels << label.title
 
     item.author = author
     item.genre = genre
