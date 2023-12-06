@@ -39,7 +39,7 @@ describe FileManagerModule do
         'genre' => genre.to_h
       }
 
-      expected_file_content = book.to_h
+      expected_file_content = [book.to_h]
       save_to_json(book.to_h, filename)
 
       expect(File.exist?(filename)).to be(true)
@@ -78,7 +78,7 @@ describe FileManagerModule do
 
       file_content = JSON.parse(File.read(filename))
 
-      # binding.pry
+      binding.pry
 
       expect(file_content).to eq(expected_file_content)
     end
