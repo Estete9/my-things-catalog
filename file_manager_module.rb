@@ -1,4 +1,3 @@
-require 'json'
 
 module FileManagerModule
   def save_books_to_json(books)
