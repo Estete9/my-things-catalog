@@ -19,7 +19,7 @@ class Game < Item
     super && Time.new.year - last_played_at > 2 unless last_played_at.nil?
   end
 
-  def to_h(except: false)
+  def to_h
     super.merge('multiplayer' => multiplayer, 'last_played_at' => last_played_at)
   end
 end
