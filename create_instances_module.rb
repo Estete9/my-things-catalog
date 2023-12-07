@@ -44,6 +44,7 @@ module CreateInstancesModule
     complete_game = item_with_details(base_game)
 
     @games << complete_game
+    save_to_json(base_game.to_h, 'games.json')
   end
 
   def add_music_album
@@ -98,7 +99,7 @@ module CreateInstancesModule
     author.add_item(item)
     genre.add_item(item)
     label.add_item(item)
-
+    
     item
   end
 
