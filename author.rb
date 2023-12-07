@@ -19,7 +19,7 @@ class Author
       'id' => @id,
       'first_name' => @first_name,
       'last_name' => @last_name,
-      'items' => @items.map { |item| item.to_h(except: true) }
+      'items' => @items.map(&:to_h)
     }
   end
 end
