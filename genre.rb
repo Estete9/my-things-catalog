@@ -20,4 +20,16 @@ class Genre
       'items' => @items.map { |item| item.to_h(except: true) }
     }
   end
+
+  def self.from_h(hash)
+    new(
+      hash['name']
+    ).tap do |label|
+      label.set_id(hash['id'])
+    end
+  end
+
+  def set_id(id)
+    @id = id
+  end
 end

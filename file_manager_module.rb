@@ -17,10 +17,6 @@ module FileManagerModule
     labels.each { |label| save_to_json(label.to_h, 'labels.json') }
   end
 
-  def save_authors_to_json(authors)
-    authors.each { |author| save_to_json(author.to_h, 'authors.json') }
-  end
-
   # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
@@ -29,14 +25,22 @@ module FileManagerModule
                   else
                     []
                   end
+    parsed_data.each do |data|
+      if data['id'] == item_hash['id']
+        next
+      end
+      parsed_data << item_hash
+    end
+    parsed_data = [parsed_data] unless parsed_data.is_a?(Array)
 
-    parsed_data << item_hash
     stringyfied_data = JSON.pretty_generate(parsed_data)
 
     File.write(filename, stringyfied_data)
   end
 
   def load_from_json(filename)
+    return [] unless File.exist?(filename)
+
     file_content = File.read(filename)
     JSON.parse(file_content)
   end

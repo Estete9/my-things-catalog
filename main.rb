@@ -15,6 +15,8 @@ class Main
     @labels = []
     @authors = []
     @genres = []
+
+    update_arrays
   end
 
   OPTIONS =
@@ -54,12 +56,21 @@ class Main
   def exit_app
     puts 'Saving items...'
     save_books_to_json(@books)
+    save_games_to_json(@games)
     save_labels_to_json(@labels)
     save_music_albums(@music_albums)
     save_games_to_json(@games)
     save_authors_to_json(@authors)
     puts 'Exiting the program'
     exit
+  end
+
+  def update_arrays
+    data_from_books = load_from_json('books.json')
+    @books = data_from_books.map { |book_hash| Book.from_h(book_hash) }
+
+    data_from_games = load_from_json('games.json')
+    @games = data_from_games.map { |game_hash| Book.from_h(game_hash) }
   end
 end
 
