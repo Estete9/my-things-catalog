@@ -51,7 +51,7 @@ module CreateInstancesModule
     p 'Add publish date (DD-MM-YYYY):'
     album_publish_date = valid_date_input
 
-    base_album = MusicAlbum.new(album_publish_date, spotify)
+    base_album = MusicAlbum.new(spotify, album_publish_date)
     complete_album = item_with_details(base_album)
 
     @music_albums << complete_album
