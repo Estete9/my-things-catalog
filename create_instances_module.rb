@@ -32,7 +32,7 @@ module CreateInstancesModule
   end
 
   def add_game
-    p "What's the publish date? [year]: "
+    p "What's the publish date (DD-MM-YYYY)? :"
     game_p_year = gets.chomp.to_i
     p 'Is it a multiplayer game? [y/n]: '
     game_multiplayer = gets.chomp
@@ -42,7 +42,7 @@ module CreateInstancesModule
     else
       false
     end
-    p 'When was the game last played?: '
+    p 'When was the last date (DD-MM-YYYY) that the game played?: '
     game_l_year = gets.chomp.to_i
 
     base_game = Game.new(game_multiplayer, game_l_year, game_p_year)
