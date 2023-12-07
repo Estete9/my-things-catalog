@@ -48,7 +48,7 @@ class Item
     }
   end
 
-  def self.from_h(hash, *extra_args)
+  def self.from_h(hash, *_extra_args)
     new(Date.parse(hash['publish_date']))
   end
 

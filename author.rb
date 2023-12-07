@@ -28,12 +28,11 @@ class Author
       hash['first_name'],
       hash['last_name']
     ).tap do |author|
-      author.set_id(hash['id'])
+      author.id_set(hash['id'])
     end
   end
 
-  def set_id(id)
+  def id_set(id)
     @id = id
   end
-
 end

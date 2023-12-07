@@ -25,11 +25,11 @@ class Genre
     new(
       hash['name']
     ).tap do |label|
-      label.set_id(hash['id'])
+      label.id_set(hash['id'])
     end
   end
 
-  def set_id(id)
+  def id_set(id)
     @id = id
   end
 end
