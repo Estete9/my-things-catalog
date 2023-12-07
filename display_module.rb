@@ -66,6 +66,27 @@ module DisplayModule
     end
   end
 
+  def list_all_music_albums
+    puts ['List Albums', '-----------------------']
+    @music_albums.each do |music_album|
+      author_f_name = s_to_capital(music_album.author.first_name)
+      author_l_name = s_to_capital(music_album.author.last_name)
+      genre = s_to_capital(music_album.genre.name)
+      label_title = s_to_capital(music_album.label.title)
+      label_color = s_to_capital(music_album.label.color)
+
+      details = <<~DETAILS
+        Author: #{author_f_name} #{author_l_name}
+        Genre: #{genre}
+        Label title: #{label_title}
+        Label color: #{label_color}
+        Publisher: #{music_album.publish_date}
+        Id: #{music_album.id}
+      DETAILS
+      puts [details, '-----------------------']
+    end
+  end
+
   private
 
   def s_to_capital(item)
