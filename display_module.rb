@@ -2,7 +2,7 @@ module DisplayModule
   # Add your display objects logic here
 
   def list_all_labels
-    @labels.each { |label| puts s_to_capital(label) }
+    @labels.each { |label| puts "Label id: #{label.id}, label title: #{s_to_capital(label.title)}" }
   end
 
   def list_all_books

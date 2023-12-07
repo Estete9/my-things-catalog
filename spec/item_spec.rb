@@ -1,9 +1,11 @@
 require_relative 'spec_helper'
 
+require 'date'
+
 describe Item do
   context '#add_label' do
     it 'adds a label object to the item object' do
-      publish_date = '2020-12-12'
+      publish_date = Date.parse('2020-12-12')
       label_title = 'Gift'
       label_color = 'white'
       item = Item.new(publish_date)

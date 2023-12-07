@@ -1,5 +1,7 @@
 require_relative 'spec_helper'
 
+require 'date'
+
 describe Genre do
   before :each do
     @genre_name = 'Salsa'
@@ -22,7 +24,7 @@ describe Genre do
   context '#add_item' do
     it 'updates the genre of the item' do
       genre_name = 'Salsa'
-      publish_date = '2023-05-12'
+      publish_date = Date.parse('2023-05-12')
       item = Item.new(publish_date)
       @genre.add_item(item)
 

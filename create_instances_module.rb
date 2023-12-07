@@ -57,7 +57,7 @@ module CreateInstancesModule
 
   private
 
-  # takes an item
+  # takes an item (a book, game, or music album)
   # asks for user input to create genre, author, and label objects
   # add these objects to the item
   def item_with_details(item)
@@ -71,7 +71,7 @@ module CreateInstancesModule
     genre = Genre.new(genre_name)
     label = Label.new(label_title, label_color)
 
-    @labels << label.title
+    @labels << label
     @genres << genre
     @authors << author
 
