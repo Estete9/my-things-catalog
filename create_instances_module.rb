@@ -33,7 +33,7 @@ module CreateInstancesModule
 
   def add_game
     p "What's the publish date (DD-MM-YYYY)? :"
-    game_p_year = gets.chomp.to_i
+    game_publish_date = gets.chomp.to_i
     p 'Is it a multiplayer game? [y/n]: '
     game_multiplayer = gets.chomp
     case game_multiplayer.downcase
@@ -43,7 +43,15 @@ module CreateInstancesModule
       false
     end
     p 'When was the last date (DD-MM-YYYY) that the game played?: '
-    game_l_year = gets.chomp.to_i
+    game_publish_date = gets.chomp.to_i
+
+    loop do
+      game_publish_date = Date.parse(gets.chomp)
+      break
+    rescue ArgumentError
+      p 'Incorrect date format, please use DD-MM-YYYY format'
+      p 'Add publish date (DD-MM-YYYY):'
+    end
 
     base_game = Game.new(game_multiplayer, game_l_year, game_p_year)
     complete_game = item_with_details(base_game)
