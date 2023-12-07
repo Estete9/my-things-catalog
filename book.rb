@@ -12,4 +12,8 @@ class Book < Item
   def can_be_archived?
     super && cover_state == 'bad'
   end
+
+  def to_h
+    super.merge('publisher' => publisher, 'cover_state' => cover_state)
+  end
 end

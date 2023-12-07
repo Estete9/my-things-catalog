@@ -8,9 +8,11 @@ class Item
     @id = Random.rand(1..10_000)
     @publish_date = publish_date
     @archived = false
+
+    move_to_archive
   end
 
-  def move_to_archive()
+  def move_to_archive
     @archived = true if can_be_archived?
   end
 
@@ -24,6 +26,17 @@ class Item
 
   def add_genre(genre)
     @genre = genre
+  end
+
+  def to_h(*)
+    {
+      'id' => @id,
+      'publish_date' => @publish_date.to_s,
+      'archived' => @archived,
+      'label' => @label.to_h,
+      'author' => @author.to_h,
+      'genre' => @genre.to_h
+    }
   end
 
   private
