@@ -1,6 +1,6 @@
 class Genre
   attr_accessor :name
-  attr_reader :items
+  attr_reader :items, :id
 
   def initialize(name)
     @id = Random.rand(1..1000)
@@ -17,7 +17,7 @@ class Genre
     {
       'id' => @id,
       'name' => @name,
-      'items' => @items.map(&:to_h)
+      'items' => @items.map { |item| item.to_h(except: true) }
     }
   end
 end

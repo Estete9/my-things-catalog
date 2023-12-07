@@ -52,6 +52,8 @@ class Main
   end
 
   def exit_app
+    puts 'Saving items...'
+    save_books_to_json(@books)
     puts 'Exiting the program'
     exit
   end

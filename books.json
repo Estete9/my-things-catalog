@@ -1,0 +1,92 @@
+[
+  {
+    "id": 6976,
+    "publish_date": "2020-12-12",
+    "archived": false,
+    "label": {
+      "id": 7078,
+      "title": "test",
+      "color": "test",
+      "items": [
+        {
+          "id": 6976,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 7078,
+            "label_title": "test",
+            "label_color": "test"
+          },
+          "author": {
+            "id": 6534,
+            "first_name": "test",
+            "last_name": "test"
+          },
+          "genre": {
+            "id": 102,
+            "name": "tset"
+          },
+          "publisher": "test",
+          "cover_state": "test"
+        }
+      ]
+    },
+    "author": {
+      "id": 6534,
+      "first_name": "test",
+      "last_name": "test",
+      "items": [
+        {
+          "id": 6976,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 7078,
+            "label_title": "test",
+            "label_color": "test"
+          },
+          "author": {
+            "id": 6534,
+            "first_name": "test",
+            "last_name": "test"
+          },
+          "genre": {
+            "id": 102,
+            "name": "tset"
+          },
+          "publisher": "test",
+          "cover_state": "test"
+        }
+      ]
+    },
+    "genre": {
+      "id": 102,
+      "name": "tset",
+      "items": [
+        {
+          "id": 6976,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 7078,
+            "label_title": "test",
+            "label_color": "test"
+          },
+          "author": {
+            "id": 6534,
+            "first_name": "test",
+            "last_name": "test"
+          },
+          "genre": {
+            "id": 102,
+            "name": "tset"
+          },
+          "publisher": "test",
+          "cover_state": "test"
+        }
+      ]
+    },
+    "publisher": "test",
+    "cover_state": "test"
+  }
+]

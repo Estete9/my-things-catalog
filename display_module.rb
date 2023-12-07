@@ -9,9 +9,7 @@ module DisplayModule
       puts "Title: #{label.title}"
       puts "Color: #{label.color}"
 
-      unless label.items.empty?
-        print_category_items(label)
-      end
+      print_category_items(label) unless label.items.empty?
       puts '-----------------------'
     end
   end
@@ -47,9 +45,7 @@ module DisplayModule
       puts "First Name: #{author.first_name}"
       puts "Last Name: #{author.last_name}"
 
-      unless author.items.empty?
-        print_category_items(author)
-      end
+      print_category_items(author) unless author.items.empty?
 
       puts '-----------------------'
     end
