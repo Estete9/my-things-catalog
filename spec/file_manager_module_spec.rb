@@ -4,8 +4,6 @@ require 'json'
 require 'date'
 include FileManagerModule
 
-require 'pry'
-
 describe FileManagerModule do
   let(:temp_dir) { File.join(File.dirname(__FILE__), 'temp_test_dir') }
   let(:book) { Book.new('penguin', 'bad', Date.parse('2006-12-12')) }
@@ -50,6 +48,7 @@ describe FileManagerModule do
     end
 
     it 'saves the contents of the @books array twice' do
+      @books = []
       second_book = Book.new('astra', 'new', Date.parse('2016-12-12'))
       second_book.add_author(author)
       second_book.add_label(label)
@@ -69,14 +68,16 @@ describe FileManagerModule do
 
 
       expected_file_content = [book.to_h, second_book.to_h]
-      save_to_json(book.to_h, filename)
-      save_to_json(second_book.to_h, filename)
+      @books << book
+      @books << second_book
+
+      @books.each do |book|
+        save_to_json(book.to_h, filename)
+      end
 
       expect(File.exist?(filename)).to be(true)
 
       file_content = JSON.parse(File.read(filename))
-
-      binding.pry
 
       expect(file_content).to eq(expected_file_content)
     end
