@@ -15,15 +15,7 @@ module CreateInstancesModule
     book_cover_state = gets.chomp
 
     p 'Add publish date (DD-MM-YYYY):'
-    book_publish_date = ''
-
-    loop do
-      book_publish_date = Date.parse(gets.chomp)
-      break
-    rescue ArgumentError
-      p 'Incorrect date format, please use DD-MM-YYYY format'
-      p 'Add publish date (DD-MM-YYYY):'
-    end
+    book_publish_date = valid_date_input
 
     base_book = Book.new(book_publisher, book_cover_state, book_publish_date)
     complete_book = item_with_details(base_book)
@@ -33,7 +25,7 @@ module CreateInstancesModule
 
   def add_game
     p "What's the publish date (DD-MM-YYYY)? :"
-    game_publish_date = gets.chomp.to_i
+    game_p_year = valid_date_input
     p 'Is it a multiplayer game? [y/n]: '
     game_multiplayer = gets.chomp
     case game_multiplayer.downcase
@@ -43,20 +35,24 @@ module CreateInstancesModule
       false
     end
     p 'When was the last date (DD-MM-YYYY) that the game played?: '
-    game_publish_date = gets.chomp.to_i
-
-    loop do
-      game_publish_date = Date.parse(gets.chomp)
-      break
-    rescue ArgumentError
-      p 'Incorrect date format, please use DD-MM-YYYY format'
-      p 'Add publish date (DD-MM-YYYY):'
-    end
+    game_l_year = valid_date_input
 
     base_game = Game.new(game_multiplayer, game_l_year, game_p_year)
     complete_game = item_with_details(base_game)
 
     @games << complete_game
+  end
+
+  def valid_date_input
+    loop do
+      date_input = gets.chomp
+
+      begin
+        return Date.parse(date_input)
+      rescue ArgumentError
+        p 'Incorrect date format, please use DD-MM-YYYY format'
+      end
+    end
   end
 
   private
