@@ -52,6 +52,10 @@ class Main
   end
 
   def exit_app
+    puts 'Saving items...'
+    save_books_to_json(@books)
+    save_labels_to_json(@labels)
+    save_music_albums(@music_albums)
     puts 'Exiting the program'
     exit
   end
