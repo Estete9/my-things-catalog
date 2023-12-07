@@ -17,7 +17,7 @@ class Genre
     {
       'id' => @id,
       'name' => @name,
-      'items' => @items.map(&:to_h)
+      'items' => @items.map { |item| item.to_h(except: true) }
     }
   end
 

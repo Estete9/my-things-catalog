@@ -12,7 +12,7 @@ class MusicAlbum < Item
     super && @on_spotify
   end
 
-  def to_h
+  def to_h(except: false)
     super.merge('on_spotify' => on_spotify)
   end
 end

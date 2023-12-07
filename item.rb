@@ -27,14 +27,24 @@ class Item
     @genre = genre
   end
 
-  def to_h(*)
+  def to_h(*, except: false)
     {
       'id' => @id,
       'publish_date' => @publish_date.to_s,
       'archived' => @archived,
-      'label' => @label.to_h,
-      'author' => @author.to_h,
-      'genre' => @genre.to_h
+      'label' => if except
+                   { 'id' => @label.id, 'label_title' => @label.title,
+                     'label_color' => @label.color }
+                 else
+                   @label.to_h
+                 end,
+      'author' => if except
+                    { 'id' => @author.id, 'first_name' => @author.first_name,
+                      'last_name' => @author.last_name }
+                  else
+                    @author.to_h
+                  end,
+      'genre' => except ? { 'id' => @genre.id, 'name' => @genre.name } : @genre.to_h
     }
   end
 

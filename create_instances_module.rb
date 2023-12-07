@@ -4,8 +4,10 @@ require_relative 'genre'
 require_relative 'label'
 require_relative 'game'
 require_relative 'music_album'
+require_relative 'file_manager_module'
 
 module CreateInstancesModule
+  include FileManagerModule
   # Add your create objects logic here
 
   def add_book
