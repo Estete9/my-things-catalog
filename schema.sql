@@ -20,7 +20,7 @@ CREATE TABLE authors(
     PRIMARY KEY(id)
 );
 
-CREATE TABLE music_album (
+CREATE TABLE music_albums (
     id INT GENERATED ALWAYS AS IDENTITY,
     genre VARCHAR(25),
     author VARCHAR(50),
@@ -37,8 +37,31 @@ CREATE TABLE music_album (
     FOREIGN KEY (label_id) REFERENCES labels(id)
 );
 
-CREATE TABLE genre (
+CREATE TABLE genres (
     id INT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(50),
     PRIMARY KEY(id)
 );
+
+
+CREATE TABLE books (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    publish_date DATE NOT NULL,
+    archived BOOLEAN,
+    cover_state VARCHAR(50),
+    publisher VARCHAR(50),
+    genre_id INT NOT NULL,
+    author_id INT NOT NULL,
+    label_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(genre_id) REFERENCES genres(id),
+    FOREIGN KEY(author_id) REFERENCES authors(id),
+    FOREIGN KEY(label_id) REFERENCES labels(id)
+)
+
+CREATE TABLE labels (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    title VARCHAR(50),
+    color VARCHAR(50),
+    PRIMARY KEY(id)
+)
