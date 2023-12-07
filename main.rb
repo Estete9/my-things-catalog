@@ -56,8 +56,8 @@ class Main
     save_books_to_json(@books)
     save_labels_to_json(@labels)
     save_music_albums(@music_albums)
-    save_music_albums(@games)
-    save_music_albums(@authors)
+    save_games_to_json(@games)
+    save_authors_to_json(@authors)
     puts 'Exiting the program'
     exit
   end

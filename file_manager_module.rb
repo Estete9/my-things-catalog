@@ -1,7 +1,5 @@
 require 'json'
 
-require 'pry'
-
 module FileManagerModule
   def save_books_to_json(books)
     books.each { |book| save_to_json(book.to_h, 'books.json') }
@@ -19,13 +17,14 @@ module FileManagerModule
     labels.each { |label| save_to_json(label.to_h, 'labels.json') }
   end
 
+  def save_authors_to_json(authors)
+    authors.each { |author| save_to_json(author.to_h, 'music_albums.json') }
+  end
+
   # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
                     data_from_file = File.read(filename)
-
-                    # binding.pry
-
                     data_from_file.empty? ? [] : JSON.parse(data_from_file)
                   else
                     []
