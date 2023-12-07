@@ -21,7 +21,6 @@ module FileManagerModule
     genres.each { |_genre| save_to_json(label.to_h, 'genre.json') }
   end
 
-  # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
                     data_from_file = File.read(filename)
