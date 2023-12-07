@@ -25,12 +25,10 @@ module FileManagerModule
                   else
                     []
                   end
-    parsed_data.each do |data|
-      if data['id'] == item_hash['id']
-        next
-      end
-      parsed_data << item_hash
-    end
+    item_exists = parsed_data.any? { |data| data['id'] == item_hash['id'] }
+
+    parsed_data << item_hash unless item_exists
+
     parsed_data = [parsed_data] unless parsed_data.is_a?(Array)
 
     stringyfied_data = JSON.pretty_generate(parsed_data)

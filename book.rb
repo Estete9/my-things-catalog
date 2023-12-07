@@ -23,10 +23,10 @@ class Book < Item
       hash['cover_state'],
       Date.parse(hash['publish_date'])
     ).tap do |book|
-        book.add_author(Author.from_h(hash['author'])) if hash.key?('author')
-        book.add_genre(Genre.from_h(hash['genre'])) if hash.key?('genre')
-        book.add_label(Label.from_h(hash['label'])) if hash.key?('label')
-        book.id = hash['id'] if hash.key?('id')
-      end
+      book.add_author(Author.from_h(hash['author'])) if hash.key?('author')
+      book.add_genre(Genre.from_h(hash['genre'])) if hash.key?('genre')
+      book.add_label(Label.from_h(hash['label'])) if hash.key?('label')
+      book.id = hash['id'] if hash.key?('id')
+    end
   end
 end
