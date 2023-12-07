@@ -48,6 +48,10 @@ class Item
     }
   end
 
+  def self.from_h(hash, *extra_args)
+    new(Date.parse(hash['publish_date']))
+  end
+
   private
 
   def can_be_archived?

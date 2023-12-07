@@ -22,4 +22,18 @@ class Author
       'items' => items.map { |item| item.to_h(except: true) }
     }
   end
+
+  def self.from_h(hash)
+    new(
+      hash['first_name'],
+      hash['last_name']
+    ).tap do |author|
+      author.set_id(hash['id'])
+    end
+  end
+
+  def set_id(id)
+    @id = id
+  end
+
 end

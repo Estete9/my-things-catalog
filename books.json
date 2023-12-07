@@ -1,0 +1,182 @@
+[
+  {
+    "id": 5469,
+    "publish_date": "2020-12-12",
+    "archived": false,
+    "label": {
+      "id": 3912,
+      "title": "new",
+      "color": "red",
+      "items": [
+        {
+          "id": 5469,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 3912,
+            "label_title": "new",
+            "label_color": "red"
+          },
+          "author": {
+            "id": 7700,
+            "first_name": "douglas",
+            "last_name": "adams"
+          },
+          "genre": {
+            "id": 312,
+            "name": "scifi"
+          },
+          "publisher": "penguin",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "author": {
+      "id": 7700,
+      "first_name": "douglas",
+      "last_name": "adams",
+      "items": [
+        {
+          "id": 5469,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 3912,
+            "label_title": "new",
+            "label_color": "red"
+          },
+          "author": {
+            "id": 7700,
+            "first_name": "douglas",
+            "last_name": "adams"
+          },
+          "genre": {
+            "id": 312,
+            "name": "scifi"
+          },
+          "publisher": "penguin",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "genre": {
+      "id": 312,
+      "name": "scifi",
+      "items": [
+        {
+          "id": 5469,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 3912,
+            "label_title": "new",
+            "label_color": "red"
+          },
+          "author": {
+            "id": 7700,
+            "first_name": "douglas",
+            "last_name": "adams"
+          },
+          "genre": {
+            "id": 312,
+            "name": "scifi"
+          },
+          "publisher": "penguin",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "publisher": "penguin",
+    "cover_state": "good"
+  },
+  {
+    "id": 1573,
+    "publish_date": "2020-12-12",
+    "archived": false,
+    "label": {
+      "id": 856,
+      "title": "setaset",
+      "color": "ast",
+      "items": [
+        {
+          "id": 1573,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 856,
+            "label_title": "setaset",
+            "label_color": "ast"
+          },
+          "author": {
+            "id": 6436,
+            "first_name": "test",
+            "last_name": "asetset"
+          },
+          "genre": {
+            "id": 183,
+            "name": "aset"
+          },
+          "publisher": "test",
+          "cover_state": "test"
+        }
+      ]
+    },
+    "author": {
+      "id": 6436,
+      "first_name": "test",
+      "last_name": "asetset",
+      "items": [
+        {
+          "id": 1573,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 856,
+            "label_title": "setaset",
+            "label_color": "ast"
+          },
+          "author": {
+            "id": 6436,
+            "first_name": "test",
+            "last_name": "asetset"
+          },
+          "genre": {
+            "id": 183,
+            "name": "aset"
+          },
+          "publisher": "test",
+          "cover_state": "test"
+        }
+      ]
+    },
+    "genre": {
+      "id": 183,
+      "name": "aset",
+      "items": [
+        {
+          "id": 1573,
+          "publish_date": "2020-12-12",
+          "archived": false,
+          "label": {
+            "id": 856,
+            "label_title": "setaset",
+            "label_color": "ast"
+          },
+          "author": {
+            "id": 6436,
+            "first_name": "test",
+            "last_name": "asetset"
+          },
+          "genre": {
+            "id": 183,
+            "name": "aset"
+          },
+          "publisher": "test",
+          "cover_state": "test"
+        }
+      ]
+    },
+    "publisher": "test",
+    "cover_state": "test"
+  }
+]
