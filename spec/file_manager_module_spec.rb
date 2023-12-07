@@ -2,9 +2,9 @@ require 'spec_helper'
 require 'fileutils'
 require 'json'
 require 'date'
-include FileManagerModule
 
 describe FileManagerModule do
+  include FileManagerModule
   let(:temp_dir) { File.join(File.dirname(__FILE__), 'temp_test_dir') }
   let(:book) { Book.new('penguin', 'bad', Date.parse('2006-12-12')) }
   let(:label) { Label.new('gift', 'red') }
@@ -25,9 +25,7 @@ describe FileManagerModule do
   context '#save_to_json' do
     it 'saves the contents of the @books array' do
       filename = File.join(temp_dir, 'books.json')
-      expected_publisher = 'penguin'
-      expected_cover_state = 'bad'
-      expected_publish_date = Date.parse('2006-12-12')
+      Date.parse('2006-12-12')
       expected_file_content = [book.to_h]
 
       save_to_json(book.to_h, filename)
@@ -46,9 +44,6 @@ describe FileManagerModule do
       second_book.add_label(label)
       second_book.add_genre(genre)
       filename = File.join(temp_dir, 'books.json')
-      expected_publisher = 'penguin'
-      expected_cover_state = 'bad'
-      expected_publish_date = '2006-12-12'
       expected_file_content = [book.to_h, second_book.to_h]
 
       @books << book
