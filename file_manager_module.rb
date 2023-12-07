@@ -8,15 +8,19 @@ module FileManagerModule
   end
 
   def save_games_to_json(games)
-    games.each { |game| save_to_json(game.to_h, 'games.json')}
+    games.each { |game| save_to_json(game.to_h, 'games.json') }
   end
 
   def save_music_albums(albums)
-    albums.each { |album| save_to_json(album.to_h, 'music_albums.json')}
+    albums.each { |album| save_to_json(album.to_h, 'music_albums.json') }
   end
 
   def save_labels_to_json(labels)
-    labels.each { |label| save_to_json(label.to_h, 'labels.json')}
+    labels.each { |label| save_to_json(label.to_h, 'labels.json') }
+  end
+
+  def save_genre_to_json(genre)
+    genres.each { |_genre| save_to_json(label.to_h, 'genre.json') }
   end
 
   # Add your file management logic here
