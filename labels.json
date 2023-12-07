@@ -194,5 +194,425 @@
         "cover_state": "good"
       }
     ]
+  },
+  {
+    "id": 8223,
+    "title": "gift",
+    "color": "black",
+    "items": [
+      {
+        "id": 5740,
+        "publish_date": "2012-12-12",
+        "archived": false,
+        "label": {
+          "id": 8223,
+          "label_title": "gift",
+          "label_color": "black"
+        },
+        "author": {
+          "id": 2141,
+          "first_name": "auth",
+          "last_name": "lastanme"
+        },
+        "genre": {
+          "id": 253,
+          "name": "scifi"
+        },
+        "publisher": "penguin",
+        "cover_state": "bad"
+      }
+    ]
+  },
+  {
+    "id": 6466,
+    "title": "gift",
+    "color": "black",
+    "items": [
+      {
+        "id": 8104,
+        "publish_date": "0219-12-12",
+        "archived": false,
+        "label": {
+          "id": 6466,
+          "label_title": "gift",
+          "label_color": "black"
+        },
+        "author": {
+          "id": 8165,
+          "first_name": "authf",
+          "last_name": "authl"
+        },
+        "genre": {
+          "id": 934,
+          "name": "scifi"
+        },
+        "publisher": "penguin",
+        "cover_state": "bad"
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "title": "setts",
+    "color": "estt",
+    "items": [
+      {
+        "id": 7261,
+        "publish_date": "1212-12-12",
+        "archived": false,
+        "label": {
+          "id": 163,
+          "label_title": "setts",
+          "label_color": "estt"
+        },
+        "author": {
+          "id": 3270,
+          "first_name": "test",
+          "last_name": "test"
+        },
+        "genre": {
+          "id": 846,
+          "name": "tests"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 2288,
+    "title": "gift",
+    "color": "cyan",
+    "items": [
+      {
+        "id": 5303,
+        "publish_date": "2012-12-12",
+        "archived": false,
+        "label": {
+          "id": 2288,
+          "label_title": "gift",
+          "label_color": "cyan"
+        },
+        "author": {
+          "id": 4153,
+          "first_name": "Jason",
+          "last_name": "Moogles"
+        },
+        "genre": {
+          "id": 250,
+          "name": "self help"
+        },
+        "publisher": "penguin",
+        "cover_state": "bad"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "title": "setaset",
+    "color": "ast",
+    "items": [
+      {
+        "id": 1573,
+        "publish_date": "2020-12-12",
+        "archived": false,
+        "label": {
+          "id": 856,
+          "label_title": "setaset",
+          "label_color": "ast"
+        },
+        "author": {
+          "id": 6436,
+          "first_name": "test",
+          "last_name": "asetset"
+        },
+        "genre": {
+          "id": 183,
+          "name": "aset"
+        },
+        "publisher": "test",
+        "cover_state": "test"
+      }
+    ]
   }
 ]
