@@ -2,10 +2,23 @@ module DisplayModule
   # Add your display objects logic here
 
   def list_all_labels
-    @labels.each { |label| puts "Label id: #{label.id}, label title: #{s_to_capital(label.title)}" }
+    puts 'List Labels'
+    puts '-----------------------'
+    @labels.each do |label|
+      puts "ID: #{label.id}"
+      puts "Title: #{label.title}"
+      puts "Color: #{label.color}"
+
+      unless label.items.empty?
+        print_category_items(label)
+      end
+      puts '-----------------------'
+    end
   end
 
   def list_all_books
+    puts 'List Books'
+    puts '-----------------------'
     @books.each do |book|
       author_f_name = s_to_capital(book.author.first_name)
       author_l_name = s_to_capital(book.author.last_name)
@@ -21,6 +34,8 @@ module DisplayModule
         Id: #{book.id}
       DETAILS
       puts details
+
+      puts '-----------------------'
     end
   end
 
@@ -33,10 +48,7 @@ module DisplayModule
       puts "Last Name: #{author.last_name}"
 
       unless author.items.empty?
-        puts 'Items:'
-        author.items.each do |item|
-          puts "  - #{item.to_json}"
-        end
+        print_category_items(author)
       end
 
       puts '-----------------------'
@@ -89,7 +101,15 @@ module DisplayModule
 
   private
 
+  # Takes a string and returns it capitalized
   def s_to_capital(item)
     item[0].upcase + item[1..]
+  end
+
+  def print_category_items(category)
+    puts 'Items:'
+    category.items.each do |item|
+      puts "  - Type: #{item.class.name}, ID: #{item.id}, Publish Date: #{item.publish_date}"
+    end
   end
 end
