@@ -3,7 +3,7 @@ require 'date'
 
 describe 'music_album' do
   before(:each) do
-    @music_album = MusicAlbum.new('Salsa', 'Ruben Blades', 'Classic', Date.new(6 - 20 - 1983))
+    @music_album = MusicAlbum.new(true, Date.new(6 - 20 - 1983))
     @music_album.genre = double('Genre', name: 'Salsa')
     @music_album.author = double('Author', first_name: 'Ruben', last_name: 'Blades')
     @music_album.label = double('Label', title: 'Classic', color: 'Black')
