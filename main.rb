@@ -60,6 +60,7 @@ class Main
     save_labels_to_json(@labels)
     save_music_albums(@music_albums)
     save_genre_to_json(genre)
+    save_authors_to_json(@authors)
     puts 'Exiting the program'
     exit
   end
