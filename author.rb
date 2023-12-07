@@ -35,5 +35,4 @@ class Author
   def set_id(id)
     @id = id
   end
-
 end
