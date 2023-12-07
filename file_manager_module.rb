@@ -1,7 +1,6 @@
 require 'json'
 
 module FileManagerModule
-
   # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
