@@ -10,10 +10,7 @@ module DisplayModule
       puts "Color: #{label.color}"
 
       unless label.items.empty?
-        puts 'Items:'
-        label.items.each do |item|
-          puts "  - #{item.to_json}"
-        end
+        print_category_items(label)
       end
       puts '-----------------------'
     end
@@ -51,10 +48,7 @@ module DisplayModule
       puts "Last Name: #{author.last_name}"
 
       unless author.items.empty?
-        puts 'Items:'
-        author.items.each do |item|
-          puts "  - #{item.to_json}"
-        end
+        print_category_items(author)
       end
 
       puts '-----------------------'
@@ -110,5 +104,12 @@ module DisplayModule
   # Takes a string and returns it capitalized
   def s_to_capital(item)
     item[0].upcase + item[1..]
+  end
+
+  def print_category_items(category)
+    puts 'Items:'
+    category.items.each do |item|
+      puts "  - Type: #{item.class.name}, ID: #{item.id}, Publish Date: #{item.publish_date}"
+    end
   end
 end
