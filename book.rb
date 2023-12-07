@@ -13,7 +13,7 @@ class Book < Item
     super && cover_state == 'bad'
   end
 
-  def to_h
+  def to_h(except: false)
     super.merge('publisher' => publisher, 'cover_state' => cover_state)
   end
 end
