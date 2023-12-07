@@ -8,16 +8,6 @@ class Game < Item
     @last_played_at = last_played_at
   end
 
-  def to_hash
-    {
-      'id' => id,
-      'multiplayer' => multiplayer,
-      'last_played_at' => last_played_at,
-      'publish_date' => publish_date,
-      'can_be_archived' => can_be_archived?
-    }
-  end
-
   private
 
   def can_be_archived?
