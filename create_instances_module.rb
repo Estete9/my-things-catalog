@@ -3,6 +3,7 @@ require_relative 'author'
 require_relative 'genre'
 require_relative 'label'
 require_relative 'game'
+require_relative 'music_album'
 
 module CreateInstancesModule
   # Add your create objects logic here
@@ -41,6 +42,19 @@ module CreateInstancesModule
     complete_game = item_with_details(base_game)
 
     @games << complete_game
+  end
+
+  def add_music_album
+    p 'Is the album in Spotify (true or false)?'
+    spotify = gets.chomp
+
+    p 'Add publish date (DD-MM-YYYY):'
+    album_publish_date = valid_date_input
+
+    base_album = MusicAlbum.new(album_publish_date, spotify)
+    complete_album = item_with_details(base_album)
+
+    @music_albums << complete_album
   end
 
   def valid_date_input
