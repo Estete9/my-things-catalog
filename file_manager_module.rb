@@ -20,7 +20,7 @@ module FileManagerModule
   def save_genre_to_json(genre)
     genres.each { |_genre| save_to_json(label.to_h, 'genre.json') }
   def save_authors_to_json(authors)
-    authors.each { |author| save_to_json(author.to_h, 'music_albums.json') }
+    authors.each { |author| save_to_json(author.to_h, 'authors.json') }
   end
 
   # Add your file management logic here
