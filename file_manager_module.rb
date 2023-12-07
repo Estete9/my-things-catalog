@@ -1,6 +1,7 @@
 require 'json'
 
 module FileManagerModule
+
   # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
@@ -11,8 +12,9 @@ module FileManagerModule
                   end
 
     parsed_data << item_hash
+    stringyfied_data = JSON.pretty_generate(parsed_data)
 
-    File.write(filename, JSON.dump(parsed_data))
+    File.write(filename, stringyfied_data)
   end
 
   def load_from_json(filename)

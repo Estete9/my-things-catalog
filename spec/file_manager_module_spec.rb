@@ -32,6 +32,7 @@ describe FileManagerModule do
 
       expect(File.exist?(filename)).to be(true)
 
+
       file_content = JSON.parse(File.read(filename))
 
       expect(file_content).to eq(expected_file_content)
