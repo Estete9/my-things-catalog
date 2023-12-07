@@ -2,10 +2,26 @@ module DisplayModule
   # Add your display objects logic here
 
   def list_all_labels
-    @labels.each { |label| puts "Label id: #{label.id}, label title: #{s_to_capital(label.title)}" }
+    puts 'List Labels'
+    puts '-----------------------'
+    @labels.each do |label|
+      puts "ID: #{label.id}"
+      puts "Title: #{label.title}"
+      puts "Color: #{label.color}"
+
+      unless label.items.empty?
+        puts 'Items:'
+        label.items.each do |item|
+          puts "  - #{item.to_json}"
+        end
+      end
+      puts '-----------------------'
+    end
   end
 
   def list_all_books
+    puts 'List Books'
+    puts '-----------------------'
     @books.each do |book|
       author_f_name = s_to_capital(book.author.first_name)
       author_l_name = s_to_capital(book.author.last_name)
@@ -21,6 +37,8 @@ module DisplayModule
         Id: #{book.id}
       DETAILS
       puts details
+
+      puts '-----------------------'
     end
   end
 
@@ -89,6 +107,7 @@ module DisplayModule
 
   private
 
+  # Takes a string and returns it capitalized
   def s_to_capital(item)
     item[0].upcase + item[1..]
   end
