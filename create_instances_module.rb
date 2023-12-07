@@ -4,10 +4,8 @@ require_relative 'genre'
 require_relative 'label'
 require_relative 'game'
 require_relative 'music_album'
-require_relative 'file_manager_module'
 
 module CreateInstancesModule
-  include FileManagerModule
   # Add your create objects logic here
 
   def add_book
@@ -44,7 +42,6 @@ module CreateInstancesModule
     complete_game = item_with_details(base_game)
 
     @games << complete_game
-    save_to_json(base_game.to_h, 'games.json')
   end
 
   def add_music_album

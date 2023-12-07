@@ -19,7 +19,7 @@ class Label
       'id' => id,
       'title' => title,
       'color' => color,
-      'items' => items.map { |item| item.to_h(except: true) }
+      'items' => items.map(&:to_h)
     }
   end
 

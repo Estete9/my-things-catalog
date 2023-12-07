@@ -25,7 +25,6 @@ module DisplayModule
   end
 
   def list_all_authors
-    @authors = load_from_json('authors.json')
     puts 'List Authors'
     puts '-----------------------'
     @authors.each do |author|
@@ -45,7 +44,6 @@ module DisplayModule
   end
 
   def list_all_games
-    @games = load_from_json('games.json')
     puts 'List Games'
     puts '-----------------------'
     @games.each do |game|

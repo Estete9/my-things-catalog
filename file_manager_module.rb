@@ -25,6 +25,7 @@ module FileManagerModule
     authors.each { |author| save_to_json(author.to_h, 'authors.json') }
   end
 
+  # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
                     data_from_file = File.read(filename)
