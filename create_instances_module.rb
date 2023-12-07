@@ -89,6 +89,10 @@ module CreateInstancesModule
     @genres << genre
     @authors << author
 
+    author.add_item(item)
+    genre.add_item(item)
+    label.add_item(item)
+
     item.author = author
     item.genre = genre
     item.label = label
