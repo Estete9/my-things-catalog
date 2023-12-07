@@ -9,9 +9,7 @@ module DisplayModule
       puts "Title: #{label.title}"
       puts "Color: #{label.color}"
 
-      unless label.items.empty?
-        print_category_items(label)
-      end
+      print_category_items(label) unless label.items.empty?
       puts '-----------------------'
     end
   end
@@ -47,9 +45,7 @@ module DisplayModule
       puts "First Name: #{author.first_name}"
       puts "Last Name: #{author.last_name}"
 
-      unless author.items.empty?
-        print_category_items(author)
-      end
+      print_category_items(author) unless author.items.empty?
 
       puts '-----------------------'
     end
@@ -78,8 +74,21 @@ module DisplayModule
     end
   end
 
+  def list_all_genres
+    puts 'List all genres'
+    puts '-----------------------'
+    @genres.each do |genre|
+      puts "ID: #{genre.id}"
+      puts "Title: #{genre.name}"
+
+      print_category_items(genre) unless genre.items.empty?
+      puts '-----------------------'
+    end
+  end
+
   def list_all_music_albums
-    puts ['List Albums', '-----------------------']
+    puts 'List Albums'
+    puts '-----------------------'
     @music_albums.each do |music_album|
       author_f_name = s_to_capital(music_album.author.first_name)
       author_l_name = s_to_capital(music_album.author.last_name)
