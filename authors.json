@@ -26,33 +26,5 @@
         "cover_state": "good"
       }
     ]
-  },
-  {
-    "id": 1123,
-    "first_name": "tony",
-    "last_name": "bro",
-    "items": [
-      {
-        "id": 1259,
-        "publish_date": "2009-07-29",
-        "archived": false,
-        "label": {
-          "id": 4094,
-          "label_title": "call of duty",
-          "label_color": "brown"
-        },
-        "author": {
-          "id": 1123,
-          "first_name": "tony",
-          "last_name": "bro"
-        },
-        "genre": {
-          "id": 233,
-          "name": "strategy"
-        },
-        "multiplayer": "y",
-        "last_played_at": "2020-12-12"
-      }
-    ]
   }
 ]
