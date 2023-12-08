@@ -10,6 +10,7 @@
   - [Setup](#setup)
   - [Usage](#usage)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -61,6 +62,14 @@ Clone this repository to your desired folder:
 
 To make use of this project on the console, kindly run `ruby main.rb`
 
+### Testing <a name="testing">
+
+To run all tests please:
+- Make sure that the `rspec` gem is  installed
+- Confirm that you are at the root directory (ex: ./my-things-catalog)
+- Run the script `rspec`
+- *Alternatvely run the script `rspect --format doc` for a more stylized output
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Erwin Amador**
@@ -83,6 +92,12 @@ To make use of this project on the console, kindly run `ruby main.rb`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- **Connect this database to a website**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
