@@ -68,13 +68,13 @@ class Main
     @books = data_from_books.map { |book_hash| Book.from_h(book_hash) }
 
     data_from_labels = load_from_json('labels.json')
-    @labels = data_from_labels.map { |label_hash| Label.from_h(label_hash)}
+    @labels = data_from_labels.map { |label_hash| Label.from_h(label_hash) }
 
     data_from_labels = load_from_json('games.json')
-    @games = data_from_labels.map { |game_hash| Game.from_h(game_hash)}
+    @games = data_from_labels.map { |game_hash| Game.from_h(game_hash) }
 
     data_from_labels = load_from_json('authors.json')
-    @authors = data_from_labels.map { |author_hash| Author.from_h(author_hash)}
+    @authors = data_from_labels.map { |author_hash| Author.from_h(author_hash) }
   end
 end
 

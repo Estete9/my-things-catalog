@@ -88,5 +88,95 @@
     },
     "multiplayer": "y",
     "last_played_at": "2020-12-12"
+  },
+  {
+    "id": 1015,
+    "publish_date": "2010-01-01",
+    "archived": false,
+    "label": {
+      "id": 3866,
+      "title": "HALO",
+      "color": "green",
+      "items": [
+        {
+          "id": 1015,
+          "publish_date": "2010-01-01",
+          "archived": false,
+          "label": {
+            "id": 3866,
+            "label_title": "HALO",
+            "label_color": "green"
+          },
+          "author": {
+            "id": 4492,
+            "first_name": "jose",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 162,
+            "name": "action"
+          },
+          "multiplayer": "y",
+          "last_played_at": "2023-12-12"
+        }
+      ]
+    },
+    "author": {
+      "id": 4492,
+      "first_name": "jose",
+      "last_name": "bro",
+      "items": [
+        {
+          "id": 1015,
+          "publish_date": "2010-01-01",
+          "archived": false,
+          "label": {
+            "id": 3866,
+            "label_title": "HALO",
+            "label_color": "green"
+          },
+          "author": {
+            "id": 4492,
+            "first_name": "jose",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 162,
+            "name": "action"
+          },
+          "multiplayer": "y",
+          "last_played_at": "2023-12-12"
+        }
+      ]
+    },
+    "genre": {
+      "id": 162,
+      "name": "action",
+      "items": [
+        {
+          "id": 1015,
+          "publish_date": "2010-01-01",
+          "archived": false,
+          "label": {
+            "id": 3866,
+            "label_title": "HALO",
+            "label_color": "green"
+          },
+          "author": {
+            "id": 4492,
+            "first_name": "jose",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 162,
+            "name": "action"
+          },
+          "multiplayer": "y",
+          "last_played_at": "2023-12-12"
+        }
+      ]
+    },
+    "multiplayer": "y",
+    "last_played_at": "2023-12-12"
   }
 ]

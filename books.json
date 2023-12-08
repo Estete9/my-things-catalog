@@ -88,5 +88,95 @@
     },
     "publisher": "penguin",
     "cover_state": "good"
+  },
+  {
+    "id": 2299,
+    "publish_date": "2019-12-12",
+    "archived": false,
+    "label": {
+      "id": 3338,
+      "title": "wolf",
+      "color": "black",
+      "items": [
+        {
+          "id": 2299,
+          "publish_date": "2019-12-12",
+          "archived": false,
+          "label": {
+            "id": 3338,
+            "label_title": "wolf",
+            "label_color": "black"
+          },
+          "author": {
+            "id": 2274,
+            "first_name": "emi",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 405,
+            "name": "mistery"
+          },
+          "publisher": "omega",
+          "cover_state": "bad"
+        }
+      ]
+    },
+    "author": {
+      "id": 2274,
+      "first_name": "emi",
+      "last_name": "bro",
+      "items": [
+        {
+          "id": 2299,
+          "publish_date": "2019-12-12",
+          "archived": false,
+          "label": {
+            "id": 3338,
+            "label_title": "wolf",
+            "label_color": "black"
+          },
+          "author": {
+            "id": 2274,
+            "first_name": "emi",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 405,
+            "name": "mistery"
+          },
+          "publisher": "omega",
+          "cover_state": "bad"
+        }
+      ]
+    },
+    "genre": {
+      "id": 405,
+      "name": "mistery",
+      "items": [
+        {
+          "id": 2299,
+          "publish_date": "2019-12-12",
+          "archived": false,
+          "label": {
+            "id": 3338,
+            "label_title": "wolf",
+            "label_color": "black"
+          },
+          "author": {
+            "id": 2274,
+            "first_name": "emi",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 405,
+            "name": "mistery"
+          },
+          "publisher": "omega",
+          "cover_state": "bad"
+        }
+      ]
+    },
+    "publisher": "omega",
+    "cover_state": "bad"
   }
 ]
