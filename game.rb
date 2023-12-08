@@ -18,8 +18,4 @@ class Game < Item
   def can_be_archived?
     super && Time.new.year - last_played_at > 2 unless last_played_at.nil?
   end
-
-  def to_h(except: false)
-    super.merge('multiplayer' => multiplayer, 'last_played_at' => last_played_at)
-  end
 end
