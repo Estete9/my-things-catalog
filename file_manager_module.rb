@@ -17,6 +17,10 @@ module FileManagerModule
     labels.each { |label| save_to_json(label.to_h, 'labels.json') }
   end
 
+  def save_genres_to_json(genres)
+    genres.each { |genre| save_to_json(genre.to_h, 'genres.json') }
+  end
+
   def save_authors_to_json(authors)
     authors.each { |author| save_to_json(author.to_h, 'authors.json') }
   end

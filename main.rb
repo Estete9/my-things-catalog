@@ -59,6 +59,7 @@ class Main
     save_games_to_json(@games)
     save_labels_to_json(@labels)
     save_music_albums(@music_albums)
+    save_genres_to_json(@genres)
     save_authors_to_json(@authors)
     puts 'Exiting the program'
     exit
@@ -70,6 +71,12 @@ class Main
 
     data_from_labels = load_from_json('labels.json')
     @labels = data_from_labels.map { |label_hash| Label.from_h(label_hash) }
+
+    data_from_genres = load_from_json('genres.json')
+    @genres = data_from_genres.map { |genre_hash| Genre.from_h(genre_hash) }
+
+    data_from_albums = load_from_json('music_albums.json')
+    @music_albums = data_from_albums.map { |album_hash| MusicAlbum.from_h(album_hash) }
 
     data_from_games = load_from_json('games.json')
     @games = data_from_games.map { |game_hash| Game.from_h(game_hash) }
