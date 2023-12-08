@@ -67,6 +67,8 @@ class Main
     data_from_books = load_from_json('books.json')
     @books = data_from_books.map { |book_hash| Book.from_h(book_hash) }
 
+    data_from_labels = load_from_json('labels.json')
+    @labels = data_from_labels.map { |label_hash| Label.from_h(label_hash)}
   end
 end
 
