@@ -178,5 +178,185 @@
     },
     "publisher": "omega",
     "cover_state": "bad"
+  },
+  {
+    "id": 4604,
+    "publish_date": "2010-07-23",
+    "archived": false,
+    "label": {
+      "id": 3512,
+      "title": "wolf",
+      "color": "black",
+      "items": [
+        {
+          "id": 4604,
+          "publish_date": "2010-07-23",
+          "archived": false,
+          "label": {
+            "id": 3512,
+            "label_title": "wolf",
+            "label_color": "black"
+          },
+          "author": {
+            "id": 6469,
+            "first_name": "emi",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 315,
+            "name": "mistery"
+          },
+          "publisher": "alfa",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "author": {
+      "id": 6469,
+      "first_name": "emi",
+      "last_name": "bro",
+      "items": [
+        {
+          "id": 4604,
+          "publish_date": "2010-07-23",
+          "archived": false,
+          "label": {
+            "id": 3512,
+            "label_title": "wolf",
+            "label_color": "black"
+          },
+          "author": {
+            "id": 6469,
+            "first_name": "emi",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 315,
+            "name": "mistery"
+          },
+          "publisher": "alfa",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "genre": {
+      "id": 315,
+      "name": "mistery",
+      "items": [
+        {
+          "id": 4604,
+          "publish_date": "2010-07-23",
+          "archived": false,
+          "label": {
+            "id": 3512,
+            "label_title": "wolf",
+            "label_color": "black"
+          },
+          "author": {
+            "id": 6469,
+            "first_name": "emi",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 315,
+            "name": "mistery"
+          },
+          "publisher": "alfa",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "publisher": "alfa",
+    "cover_state": "good"
+  },
+  {
+    "id": 8216,
+    "publish_date": "2010-01-31",
+    "archived": false,
+    "label": {
+      "id": 3645,
+      "title": "wolf",
+      "color": "red",
+      "items": [
+        {
+          "id": 8216,
+          "publish_date": "2010-01-31",
+          "archived": false,
+          "label": {
+            "id": 3645,
+            "label_title": "wolf",
+            "label_color": "red"
+          },
+          "author": {
+            "id": 3672,
+            "first_name": "jose",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 862,
+            "name": "mistery"
+          },
+          "publisher": "alfa",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "author": {
+      "id": 3672,
+      "first_name": "jose",
+      "last_name": "bro",
+      "items": [
+        {
+          "id": 8216,
+          "publish_date": "2010-01-31",
+          "archived": false,
+          "label": {
+            "id": 3645,
+            "label_title": "wolf",
+            "label_color": "red"
+          },
+          "author": {
+            "id": 3672,
+            "first_name": "jose",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 862,
+            "name": "mistery"
+          },
+          "publisher": "alfa",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "genre": {
+      "id": 862,
+      "name": "mistery",
+      "items": [
+        {
+          "id": 8216,
+          "publish_date": "2010-01-31",
+          "archived": false,
+          "label": {
+            "id": 3645,
+            "label_title": "wolf",
+            "label_color": "red"
+          },
+          "author": {
+            "id": 3672,
+            "first_name": "jose",
+            "last_name": "bro"
+          },
+          "genre": {
+            "id": 862,
+            "name": "mistery"
+          },
+          "publisher": "alfa",
+          "cover_state": "good"
+        }
+      ]
+    },
+    "publisher": "alfa",
+    "cover_state": "good"
   }
 ]
