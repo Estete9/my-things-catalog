@@ -66,6 +66,18 @@ module DisplayModule
     end
   end
 
+  def list_all_genres
+    puts 'List all genres'
+    puts '-----------------------'
+    @genres.each do |genre|
+      puts "ID: #{genre.id}"
+      puts "Title: #{genre.name}"
+
+      print_category_items(genre) unless genre.items.empty?
+      puts '-----------------------'
+    end
+  end
+
   def list_all_music_albums
     puts ['List Albums', '-----------------------']
     @music_albums.each do |music_album|
