@@ -1,4 +1,4 @@
-# SCHOOL-LIBRARY
+# MY-THINGS-CATALOG
 
 # 📗 Table of Contents
 
@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Key Features] (#team-preseentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Usage](#usage)
@@ -16,8 +17,8 @@
 - [📝 License](#license)
 
 
-# 📖 [SCHOOL-LIBRARY] <a name="about-project"></a>
-In this project we add unit tests to your codebase, specifically to our classes.
+# 📖 [MY THINGS CATALOG] <a name="about-project"></a>
+In this project, we create a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. Everything will be based on the UML class diagram presented below. The data will be stored in JSON files but you will also prepare a database with tables structure analogical to your program's class structure.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -27,10 +28,19 @@ In this project we add unit tests to your codebase, specifically to our classes.
 
 ### Key Features <a name="key-features"></a>
 
-- **[CREATE SPEC FOLDER**
+- **[DATABASE WITH TABLES STRUCTURE ANALOGICAL TO OUR PROGRAM]**
+- **[CONSOLE APP TO KEEP RECORD OF PERSONAL THINGS]**
+- **[CREATE SPEC FOLDER]**
 - **[CREATE TESTS FOR ALL CLASSES]**
+- **[PRESERVE INFORMATION IN JSON FILE ]**
 
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### 🎥 Team Presentation <a name="team-presentation"></a>
+
+**[View Video Here](https://drive.google.com/file/d/16l5DLAsEzaT_5E5eJUToXYq_-6iEoTe7/view?usp=sharing)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -47,9 +57,9 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-  mkdir school-library
-  cd school-library
-  git clone git@github.com:eamador1/school-library.git
+  mkdir my-things-catalog
+  cd my-things-catalog
+  git clone git@github.com:Estete9/my-things-catalog.git
 
   ### Install <a name="install">
 
@@ -88,7 +98,7 @@ To make use of this project on the console, kindly run `ruby main.rb`
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/eamador1/school-library/issues).
+Feel free to check the [issues page](https://github.com/Estete9/my-things-catalog/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
