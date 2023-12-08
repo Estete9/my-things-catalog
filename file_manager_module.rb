@@ -21,6 +21,10 @@ module FileManagerModule
     genres.each { |genre| save_to_json(genre.to_h, 'genres.json') }
   end
 
+  def save_authors_to_json(authors)
+    authors.each { |author| save_to_json(author.to_h, 'authors.json') }
+  end
+
   # Add your file management logic here
   def save_to_json(item_hash, filename)
     parsed_data = if File.exist?(filename)
