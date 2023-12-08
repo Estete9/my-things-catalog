@@ -59,6 +59,7 @@ class Main
     save_games_to_json(@games)
     save_labels_to_json(@labels)
     save_music_albums(@music_albums)
+    save_authors_to_json(@authors)
     puts 'Exiting the program'
     exit
   end
@@ -68,8 +69,13 @@ class Main
     @books = data_from_books.map { |book_hash| Book.from_h(book_hash) }
 
     data_from_labels = load_from_json('labels.json')
-    @labels = data_from_labels.map { |label_hash| Label.from_h(label_hash)}
+    @labels = data_from_labels.map { |label_hash| Label.from_h(label_hash) }
 
+    data_from_games = load_from_json('games.json')
+    @games = data_from_games.map { |game_hash| Game.from_h(game_hash) }
+
+    data_from_authors = load_from_json('authors.json')
+    @authors = data_from_authors.map { |author_hash| Author.from_h(author_hash) }
   end
 end
 
