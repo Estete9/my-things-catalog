@@ -19,7 +19,20 @@ class Author
       'id' => @id,
       'first_name' => @first_name,
       'last_name' => @last_name,
-      'items' => @items.map(&:to_h)
+      'items' => items.map { |item| item.to_h(except: true) }
     }
+  end
+
+  def self.from_h(hash)
+    new(
+      hash['first_name'],
+      hash['last_name']
+    ).tap do |author|
+      author.id_set(hash['id'])
+    end
+  end
+
+  def id_set(id)
+    @id = id
   end
 end

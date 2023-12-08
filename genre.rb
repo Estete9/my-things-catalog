@@ -17,7 +17,19 @@ class Genre
     {
       'id' => @id,
       'name' => @name,
-      'items' => @items.map(&:to_h)
+      'items' => @items.map { |item| item.to_h(except: true) }
     }
+  end
+
+  def self.from_h(hash)
+    new(
+      hash['name']
+    ).tap do |label|
+      label.id_set(hash['id'])
+    end
+  end
+
+  def id_set(id)
+    @id = id
   end
 end
